@@ -1,0 +1,2 @@
+adv.url_to_df(df['loc'].to_list(), output_file='output_file.parquet')
+pd.read_parquet("output_file.parquet", columns=["url","scheme","netloc","path","query","fragment","dir_1","dir_2","last_dir"])
